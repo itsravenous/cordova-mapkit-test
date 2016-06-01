@@ -1,0 +1,43 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"MapKit\"><param name=\"ios-package\" value=\"MapKit\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "no.hotdot.mapkit": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/no.hotdot.mapkit/www/mapkit.js",
+            "id": "no.hotdot.mapkit.mapkit",
+            "pluginId": "no.hotdot.mapkit",
+            "clobbers": [
+                "mapkit"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.2.2",
+        "no.hotdot.mapkit": "0.0.2"
+    }
+}
